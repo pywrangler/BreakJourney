@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trk7" />
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:background="@null"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginTop="40dp"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/srcid"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_source"
+                    android:autoSizeTextType="uniform"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:theme="@style/actvtheme"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/destid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/prompt_dest"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:theme="@style/actvtheme"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="#678b8a8a"
+        android:text="@string/sub_butt" />
+
+    <TextView
+        android:id="@+id/intermediate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="20dp"
+        android:text="Intermediate Stations:"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+         />
+    <TextView
+    android:id="@+id/best"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Best Ticket Availability Chance"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="200dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+     />
+    <ListView
+        android:id="@+id/resultListView"
+        android:layout_width="364dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        />
+
+    <TextView
+        android:id="@+id/worst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="530dp"
+        android:text="Worst Ticket Availability Chance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+</FrameLayout>

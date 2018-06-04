@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/bodhi/Codes/androproj/autofill/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/home/bodhi/Codes/androproj/autofill/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/bodhi/Codes/androproj/autofill/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/arrow.png",
+        "source": "/home/bodhi/Codes/androproj/autofill/app/src/main/res/mipmap-xxxhdpi/arrow.png"
+    },
+    {
+        "merged": "/home/bodhi/Codes/androproj/autofill/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/home/bodhi/Codes/androproj/autofill/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]
